@@ -4,10 +4,12 @@
   "description": "<!-- HEADER -->\r <br />\r <p align=\"center\">\r  <a href=\"https://github.com/AntonioValentinSayago/.net6_angular_crud\">\r     <img src=\"img/antonioValentin.png\" alt=\"Logo\" width=\"300px\" height=\"160\">\r  </a>",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/server.js",
+    "prisma:studio": "prisma studio",
+    "prisma:migrate": "prisma migrate dev"
   },
   "repository": {
     "type": "git",
@@ -16,14 +18,23 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AntonioValentinSayago/api-service-now-2026/issues"
   },
   "homepage": "https://github.com/AntonioValentinSayago/api-service-now-2026#readme",
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/node": "^25.3.0",
+    "prisma": "^7.4.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.4.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
   }
 }
