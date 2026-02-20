@@ -1,17 +1,29 @@
 {
-	"name": "peliculas",
-	"version": "1.0.0",
-	"description": "",
-	"main": "rollup.config.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"sass": "sass --watch --style=compressed sass/index.scss public/bundle.css",
-		"build": "rollup --watch --config --sourcemap"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"rollup": "^2.79.1"
-	}
+  "name": "api-service-now-2026",
+  "version": "1.0.0",
+  "description": "<!-- HEADER -->\r <br />\r <p align=\"center\">\r  <a href=\"https://github.com/AntonioValentinSayago/.net6_angular_crud\">\r     <img src=\"img/antonioValentin.png\" alt=\"Logo\" width=\"300px\" height=\"160\">\r  </a>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioValentinSayago/api-service-now-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AntonioValentinSayago/api-service-now-2026/issues"
+  },
+  "homepage": "https://github.com/AntonioValentinSayago/api-service-now-2026#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
 }
